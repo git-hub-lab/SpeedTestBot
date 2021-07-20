@@ -4,7 +4,7 @@ from telegram import BotCommand
 
 
 class Config(object):
-	BOT_TOKEN = "1796923802:AAFnelNuDAauoYfaaDusqKhZj6D9LjGMnQg"
+	BOT_TOKEN = os.environ.get('TOKEN')
 	BOT_USERNAME = "xvarna279bot"
 	START_TEXT =  "Hi, [{}](tg://user?id={}), I'm Speed Test Bot. \nCheck The /help For More Info."
 	HELP_TEXT = """*Help menu!*\n
